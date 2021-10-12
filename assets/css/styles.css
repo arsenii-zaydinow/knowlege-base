@@ -216,3 +216,34 @@ ul {
 [class*="ground-pane"] {
     filter: grayscale(1);
 }
+
+.custom-scrollbar {
+    padding: 20px 30px;
+    width: 400px;
+    height: 310px;
+    background-color: #fff;
+    font-size: 14px;
+    line-height: 170%;
+    color: #333;
+}
+
+.simplebar-track.simplebar-vertical {
+    width: 18px;
+}
+
+.simplebar-track.simplebar-vertical .simplebar-scrollbar:before {
+    top: 7px;
+    bottom: 7px;
+}
+
+.simplebar-scrollbar::before {
+    left: 6px;
+    right: 6px;
+    width: 6px;
+    border-radius: 5px;
+    background-color: #CCB26E;
+}
+
+.simplebar-scrollbar.simplebar-visible::before {
+    opacity: 1;
+}
