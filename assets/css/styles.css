@@ -247,3 +247,58 @@ ul {
 .simplebar-scrollbar.simplebar-visible::before {
     opacity: 1;
 }
+
+.form {
+    padding: 40px 30px;
+    width: 440px;
+    border-radius: 10px;
+    background-color: #00000066;
+}
+
+.input {
+    display: block;
+    margin-bottom: 30px;
+    padding: 0 20px;
+    width: 100%;
+    height: 60px;
+    border: none;
+    border-radius: 10px;
+    background-color: #fff;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.input:focus {
+    outline: none;
+}
+
+.input::placeholder {
+    color: #999;
+}
+
+.form-button {
+    width: 192px;
+    height: 60px;
+    border: none;
+    border-radius: 10px;
+    background-color: #FF5C00;
+    font-size: 20px;
+    line-height: 23px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.js-validate-error-label {
+    top: -18px;
+    left: 20px;
+    padding: 0;
+    background: none;
+    font-size: 12px;
+    line-height: 14px;
+    color: #FF5C00 !important;
+}
+
+.just-validate-tooltip-hide {
+    opacity: 1;
+    animation: none;
+}

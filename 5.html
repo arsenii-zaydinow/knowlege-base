@@ -3,12 +3,46 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Чёрно-белая карта</title>
+        <title>Валидация формы</title>
         <link rel="stylesheet" href="./assets/css/normalize.css">
+        <link rel="stylesheet" href="./assets//css/justValidateTooltip.min.css">
         <link rel="stylesheet" href="./assets/css/styles.css">
     </head>
     <body class="body">
-        <section id="map"></section>
+        <section>
+            <form class="form">
+                <div class="just-validate-tooltip-container">
+                    <input 
+                        class="input"
+                        name="name"  
+                        placeholder="Имя*"
+                        type="text" 
+                        data-validate-field="name"
+                    >
+                </div>
+                <div class="just-validate-tooltip-container">
+                    <input 
+                        class="input" 
+                        name="tel"
+                        placeholder="Телефон*" 
+                        type="tel" 
+                        data-validate-field="tel"
+                    >
+                </div>
+                <div class="just-validate-tooltip-container">
+                    <input 
+                        class="input" 
+                        name="email"
+                        placeholder="E-mail*"
+                        type="email" 
+                        data-validate-field="email"
+                    >
+                </div>
+                <button class="form-button">
+                    Заказать
+                </button>
+            </form>
+        </section>
         <a class="home-button" href="index.html">
             На главную
         </a>
@@ -41,7 +75,8 @@
                 </li>
             </ul>
         </section>
-        <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
-        <script src="./assets/js/map-config.js" type="text/javascript"></script>
+        <script src="./assets/js/just-validate.min.js"></script>
+        <script src="./assets/js/inputmask.min.js"></script>
+        <script src="./assets/js/form-config.js"></script>
     </body>
 </html>
