@@ -331,17 +331,19 @@ ul {
 
 .tooltip__popup {
     position: absolute;
-    top: -40px;
+    bottom: 25px;
     left: 50%;
     transform: translateX(-50%);
     padding: 7px 15px;
-    width: 163px;
+    width: max-content;
+    max-width: 163px;
     background-color: #666;
     opacity: 0;
     font-weight: 600;
     font-size: 12px;
     line-height: 16px;
     color: #fff;
+    overflow-wrap: break-word;
 }
 
 .tooltip__popup-triangle {
