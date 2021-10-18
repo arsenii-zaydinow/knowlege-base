@@ -20,10 +20,20 @@ ul {
 .body {
     position: relative;
     display: flex;
-    justify-content: center;
     align-items: center;
     height: 100%;
+    background-color: #E5E5E5;
+}
+
+.main-container {
+    display: flex;
+    align-items: flex-start;
+    padding: 70px;
     background-color: #424242;
+}
+
+.section:not(:last-child) {
+    padding-right: 58px;
 }
 
 .home-button {
